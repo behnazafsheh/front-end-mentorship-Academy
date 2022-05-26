@@ -1,0 +1,263 @@
+:root {
+  --bg-color: rgb(215,211,228);
+  --darkPurple-color: rgb(138, 112, 214);
+  --lightPurple-color: rgb(233, 227, 254);
+  --darkBlue-color: rgb(86, 155, 228);
+  --lightBlue-color: rgb(229, 243, 254);
+  --black-color: rgb(0, 0, 0);
+  --white-color: rgb(255, 255, 255);
+  --lightPink-color: rgb(255, 227, 253);
+  --darkPink-color: rgb(222, 146, 213);
+  --lightOrange-color: rgb(255, 240, 225);
+  --darkOrange-color: rgb(252, 171, 94);
+  --light-Gray-color:rgb(222, 222, 222);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Urbanist", "Roboto", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.container_total {
+  width: 95%;
+  background-color: var(--white-color);
+  margin: 10rem auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+  border-radius: 2rem;
+}
+
+.left-side h3 {
+  margin: 0 2rem;
+  font-size: 2.5rem;
+}
+
+.square--right,
+.square--left {
+  transform: rotate(45deg);
+  font-size: 3.5rem;
+}
+
+.square--left {
+  color: var(--darkPurple-color);
+}
+
+.square--right {
+  color: var(--lightPurple-color);
+}
+
+.dashboard-list {
+  margin: 2rem 0;
+}
+
+.dashboard-list__items {
+  margin: 2rem 0;
+  padding: 2rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.dashboard-list__items:hover {
+  background-color: var(--lightPurple-color);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.dashboard-list__items i {
+  font-size: 1.5rem;
+  color: var(--light-Gray-color);
+  margin: 0 1rem;
+}
+
+.dashboard-list__items:first-child {
+  background-color: var(--lightPurple-color);
+  padding: 2rem;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.subscription__container {
+  background-color: var(--lightPurple-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  margin: 5rem 0;
+  height: 30rem;
+}
+
+.subscription__container img {
+  width: 20rem;
+  top: -80px;
+}
+
+.subscription__container button {
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--darkPurple-color);
+  color: var(--white-color);
+  padding: 1.6rem;
+  margin-top: 2rem;
+}
+
+.subscription__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.subscription__detail h4 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+.subscription__detail p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container {
+  justify-content: space-around;
+}
+
+.header__title h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.search-bar {
+  background-color: var(--white-color);
+  padding: 1.5rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 1rem;
+  margin: 0 1rem;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+}
+
+.notification {
+  background-color: var(--white-color);
+  padding: 1.5rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 1rem;
+}
+
+.course-title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 2rem;
+}
+
+.course__map-image {
+  margin: 2rem 2rem;
+}
+
+.course__map-image img {
+  width: 12rem;
+  background-color: var(--darkOrange-color);
+}
+
+.course__map {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--lightOrange-color);
+  margin: 0 2rem;
+}
+
+.profile-images img {
+  border-radius: 50%;
+  width: 3rem;
+}
+
+.course__map-javascript {
+  margin: 2rem 2rem;
+}
+
+.course__map-javascript img {
+  width: 10rem;
+  background-color: var(--darkOrange-color);
+}
+
+.course__map {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--lightOrange-color);
+  margin: 0 2rem;
+}
+
+.profile-images img {
+  border-radius: 50%;
+  width: 3rem;
+}
+/*# sourceMappingURL=main.css.map */
