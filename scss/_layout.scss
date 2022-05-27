@@ -140,54 +140,180 @@ main {
   border-radius: 1rem;
 }
 
-.course-title{
-    font-size: 2rem;
-    font-weight: 500;
-    margin: 2rem;
+.course-title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 2rem;
 }
-.course__map-image{
-    margin: 2rem 2rem;
+.course__map-image {
+  margin: 2rem 2rem;
 
+  img {
+    width: 12rem;
+    background-color: var(--darkOrange-color);
+  }
+}
+
+.course__map {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--lightOrange-color);
+  margin: 0 2rem;
+  border-radius: 2rem;
+}
+.course__map-profile{
+justify-content: space-around;
+}
+.profile-images{
+    margin: 1rem 0;
     img{
-        width: 12rem;
-        background-color: var(--darkOrange-color);
+        border-radius: 50%;
+        width: 3rem;
+    }
+}
+
+.course__map-detail{
+    justify-content: space-around;
+
+    h4{
+        font-size: 1.2rem;
+    }
+}
+
+.profile__arrow-map{
+    background-color: var(--darkOrange-color);
+    padding: 1rem;
+    border-radius: 0.3rem;
+
+    i{
+        color: var(--white-color);
+
+
     }
 }
 
 
-.course__map{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--lightOrange-color);
-    margin: 0 2rem;
-
-}
-
-.profile-images img{
-    border-radius: 50%;
-    width: 3rem;
-
-}
-.course__map-javascript{
+.course__javascript-image {
     margin: 2rem 2rem;
-
-    img{
-        width: 10rem;
-        background-color: var(--darkOrange-color);
+  
+    img {
+      width: 12rem;
+      background-color: var(--darkPurple-color);
     }
-}
-
-
-.course__map{
+  }
+  
+  .course__javascript {
     display: flex;
     flex-direction: column;
-    background-color: var(--lightOrange-color);
+    background-color: var(--lightPurple-color);
     margin: 0 2rem;
+    border-radius: 2rem;
+  }
+  .course__javascript-profile{
+  justify-content: space-around;
+  }
+  .profile-images{
+      margin: 1rem 0;
+      img{
+          border-radius: 50%;
+          width: 3rem;
+      }
+  }
+  
+  .course__javascript-detail{
+      justify-content: space-around;
+  
+      h4{
+          font-size: 1.2rem;
+      }
+  }
+  
+  .profile__arrow-javascript{
+      background-color: var(--darkPurple-color);
+      padding: 1rem;
+      border-radius: 0.3rem;
+  
+      i{
+          color: var(--white-color);
+  
+  
+      }
+  }
 
-}
 
-.profile-images img{
-    border-radius: 50%;
-    width: 3rem;
+  .course__photography-image {
+    margin: 2rem 2rem;
+  
+    img {
+      width: 12rem;
+      background-color: var(--darkBlue-color);
+    }
+  }
+  
+  .course__photography {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--lightBlue-color);
+    margin: 0 2rem;
+    border-radius: 2rem;
+  }
+  .course__photography-profile{
+  justify-content: space-around;
+  }
+  .profile-images{
+      margin: 1rem 0;
+      img{
+          border-radius: 50%;
+          width: 3rem;
+      }
+  }
+  
+  .course__photography-detail{
+      justify-content: space-around;
+  
+      h4{
+          font-size: 1.2rem;
+      }
+  }
+  
+  .profile__arrow-photography{
+      background-color: var(--darkBlue-color);
+      padding: 1rem;
+      border-radius: 0.3rem;
+  
+      i{
+          color: var(--white-color);
+  
+  
+      }
+  }
 
-}
+  .my-course__header{
+      justify-content: space-between;
+
+      h3{
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 2rem;
+      }
+
+      a{
+        font-size: 1rem;
+        color: var(--darkPink-color);
+
+        &:hover{
+            color: var(--darkPurple-color);
+        }
+      }
+  }
+
+  .my-course__title{
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+
+      h5{
+          color: var(--dark-Gray-color);
+          font-weight: 400;
+      }
+  }

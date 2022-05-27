@@ -11,6 +11,7 @@
   --lightOrange-color: rgb(255, 240, 225);
   --darkOrange-color: rgb(252, 171, 94);
   --light-Gray-color:rgb(222, 222, 222);
+  --dark-Gray-color:rgb(121, 121, 121);
 }
 
 * {
@@ -57,6 +58,7 @@ a {
 
 i {
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 button {
@@ -233,6 +235,15 @@ main {
   flex-direction: column;
   background-color: var(--lightOrange-color);
   margin: 0 2rem;
+  border-radius: 2rem;
+}
+
+.course__map-profile {
+  justify-content: space-around;
+}
+
+.profile-images {
+  margin: 1rem 0;
 }
 
 .profile-images img {
@@ -240,24 +251,147 @@ main {
   width: 3rem;
 }
 
-.course__map-javascript {
+.course__map-detail {
+  justify-content: space-around;
+}
+
+.course__map-detail h4 {
+  font-size: 1.2rem;
+}
+
+.profile__arrow-map {
+  background-color: var(--darkOrange-color);
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.profile__arrow-map i {
+  color: var(--white-color);
+}
+
+.course__javascript-image {
   margin: 2rem 2rem;
 }
 
-.course__map-javascript img {
-  width: 10rem;
-  background-color: var(--darkOrange-color);
+.course__javascript-image img {
+  width: 12rem;
+  background-color: var(--darkPurple-color);
 }
 
-.course__map {
+.course__javascript {
   display: flex;
   flex-direction: column;
-  background-color: var(--lightOrange-color);
+  background-color: var(--lightPurple-color);
   margin: 0 2rem;
+  border-radius: 2rem;
+}
+
+.course__javascript-profile {
+  justify-content: space-around;
+}
+
+.profile-images {
+  margin: 1rem 0;
 }
 
 .profile-images img {
   border-radius: 50%;
   width: 3rem;
+}
+
+.course__javascript-detail {
+  justify-content: space-around;
+}
+
+.course__javascript-detail h4 {
+  font-size: 1.2rem;
+}
+
+.profile__arrow-javascript {
+  background-color: var(--darkPurple-color);
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.profile__arrow-javascript i {
+  color: var(--white-color);
+}
+
+.course__photography-image {
+  margin: 2rem 2rem;
+}
+
+.course__photography-image img {
+  width: 12rem;
+  background-color: var(--darkBlue-color);
+}
+
+.course__photography {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--lightBlue-color);
+  margin: 0 2rem;
+  border-radius: 2rem;
+}
+
+.course__photography-profile {
+  justify-content: space-around;
+}
+
+.profile-images {
+  margin: 1rem 0;
+}
+
+.profile-images img {
+  border-radius: 50%;
+  width: 3rem;
+}
+
+.course__photography-detail {
+  justify-content: space-around;
+}
+
+.course__photography-detail h4 {
+  font-size: 1.2rem;
+}
+
+.profile__arrow-photography {
+  background-color: var(--darkBlue-color);
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.profile__arrow-photography i {
+  color: var(--white-color);
+}
+
+.my-course__header {
+  justify-content: space-between;
+}
+
+.my-course__header h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 2rem;
+}
+
+.my-course__header a {
+  font-size: 1rem;
+  color: var(--darkPink-color);
+}
+
+.my-course__header a:hover {
+  color: var(--darkPurple-color);
+}
+
+.my-course__title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.my-course__title h5 {
+  color: var(--dark-Gray-color);
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */
