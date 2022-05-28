@@ -161,159 +161,285 @@ main {
   margin: 0 2rem;
   border-radius: 2rem;
 }
-.course__map-profile{
-justify-content: space-around;
+.course__map-profile {
+  justify-content: space-around;
 }
-.profile-images{
-    margin: 1rem 0;
-    img{
-        border-radius: 50%;
-        width: 3rem;
-    }
-}
-
-.course__map-detail{
-    justify-content: space-around;
-
-    h4{
-        font-size: 1.2rem;
-    }
+.profile-images {
+  margin: 1rem 0;
+  img {
+    border-radius: 50%;
+    width: 3rem;
+  }
 }
 
-.profile__arrow-map{
-    background-color: var(--darkOrange-color);
-    padding: 1rem;
-    border-radius: 0.3rem;
+.course__map-detail {
+  justify-content: space-around;
 
-    i{
-        color: var(--white-color);
-
-
-    }
+  h4 {
+    font-size: 1.2rem;
+  }
 }
 
+.profile__arrow-map {
+  background-color: var(--darkOrange-color);
+  padding: 1rem;
+  border-radius: 0.3rem;
+
+  i {
+    color: var(--white-color);
+  }
+}
 
 .course__javascript-image {
-    margin: 2rem 2rem;
-  
-    img {
-      width: 12rem;
-      background-color: var(--darkPurple-color);
+  margin: 2rem 2rem;
+
+  img {
+    width: 12rem;
+    background-color: var(--darkPurple-color);
+  }
+}
+
+.course__javascript {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--lightPurple-color);
+  margin: 0 2rem;
+  border-radius: 2rem;
+
+//   &:hover{
+//     transform: rotateY( 180deg ) ;
+//     transition: transform 0.5s;
+//   }
+}
+.course__javascript-profile {
+  justify-content: space-around;
+}
+.profile-images {
+  margin: 1rem 0;
+  img {
+    border-radius: 50%;
+    width: 3rem;
+  }
+}
+
+.course__javascript-detail {
+  justify-content: space-around;
+
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+
+.profile__arrow-javascript {
+  background-color: var(--darkPurple-color);
+  padding: 1rem;
+  border-radius: 0.3rem;
+
+  i {
+    color: var(--white-color);
+  }
+}
+
+.course__photography-image {
+  margin: 2rem 2rem;
+
+  img {
+    width: 12rem;
+    background-color: var(--darkBlue-color);
+  }
+}
+
+.course__photography {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--lightBlue-color);
+  margin: 0 2rem;
+  border-radius: 2rem;
+}
+.course__photography-profile {
+  justify-content: space-around;
+}
+.profile-images {
+  margin: 1rem 0;
+  img {
+    border-radius: 50%;
+    width: 3rem;
+  }
+}
+
+.course__photography-detail {
+  justify-content: space-around;
+
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+
+.profile__arrow-photography {
+  background-color: var(--darkBlue-color);
+  padding: 1rem;
+  border-radius: 0.3rem;
+
+  i {
+    color: var(--white-color);
+  }
+}
+
+.my-course__header {
+  justify-content: space-between;
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 2rem;
+  }
+
+  a {
+    font-size: 1rem;
+    color: var(--darkPink-color);
+
+    &:hover {
+      color: var(--darkPurple-color);
     }
   }
-  
-  .course__javascript {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--lightPurple-color);
-    margin: 0 2rem;
-    border-radius: 2rem;
-  }
-  .course__javascript-profile{
-  justify-content: space-around;
-  }
-  .profile-images{
-      margin: 1rem 0;
-      img{
-          border-radius: 50%;
-          width: 3rem;
-      }
-  }
-  
-  .course__javascript-detail{
-      justify-content: space-around;
-  
-      h4{
-          font-size: 1.2rem;
-      }
-  }
-  
-  .profile__arrow-javascript{
-      background-color: var(--darkPurple-color);
-      padding: 1rem;
-      border-radius: 0.3rem;
-  
-      i{
-          color: var(--white-color);
-  
-  
-      }
-  }
+}
 
+.my-course__title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
 
-  .course__photography-image {
-    margin: 2rem 2rem;
-  
-    img {
-      width: 12rem;
-      background-color: var(--darkBlue-color);
-    }
+  h5 {
+    color: var(--dark-Gray-color);
+    font-weight: 400;
+    font-size: 1.5rem;
   }
-  
-  .course__photography {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--lightBlue-color);
-    margin: 0 2rem;
-    border-radius: 2rem;
-  }
-  .course__photography-profile{
-  justify-content: space-around;
-  }
-  .profile-images{
-      margin: 1rem 0;
-      img{
-          border-radius: 50%;
-          width: 3rem;
-      }
-  }
-  
-  .course__photography-detail{
-      justify-content: space-around;
-  
-      h4{
-          font-size: 1.2rem;
-      }
-  }
-  
-  .profile__arrow-photography{
-      background-color: var(--darkBlue-color);
-      padding: 1rem;
-      border-radius: 0.3rem;
-  
-      i{
-          color: var(--white-color);
-  
-  
-      }
-  }
+}
 
-  .my-course__header{
-      justify-content: space-between;
+.web-design__image,
+.html-basic__image {
+  background-color: var(--lightPurple-color);
+  padding: 2rem;
+  width: 7rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  margin: 2rem 2rem 2rem 0;
 
-      h3{
-        font-size: 2rem;
-        font-weight: 500;
-        margin: 2rem;
-      }
-
-      a{
-        font-size: 1rem;
-        color: var(--darkPink-color);
-
-        &:hover{
-            color: var(--darkPurple-color);
-        }
-      }
+  i {
+    color: var(--darkPurple-color);
+    font-size: 2rem;
   }
+}
+.Development__image {
+  background-color: var(--lightBlue-color);
+  padding: 2rem;
+  width: 7rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  margin: 2rem 2rem 2rem 0;
 
-  .my-course__title{
-      display: flex;
-      flex-direction: column;
-      margin-top: 2rem;
-
-      h5{
-          color: var(--dark-Gray-color);
-          font-weight: 400;
-      }
+  i {
+    color: var(--darkBlue-color);
+    font-size: 2rem;
   }
+}
+
+.python__image {
+  background-color: var(--lightPink-color);
+  padding: 2rem;
+  width: 7rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  margin: 2rem 2rem 2rem 0;
+
+  i {
+    color: var(--darkPink-color);
+    font-size: 2rem;
+  }
+}
+
+.javascript__image {
+  background-color: var(--lightOrange-color);
+  padding: 2rem;
+  width: 7rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  margin: 2rem 2rem 2rem 0;
+
+  i {
+    color: var(--darkOrange-color);
+    font-size: 2rem;
+  }
+}
+
+.web-design__title,
+.Development__title,
+.python__title,
+.html-basic__title,
+.javascript__title {
+  color: black;
+
+  h5 {
+    color: black;
+  }
+}
+.web-design__title,
+.Development__title,
+.python__title,
+.html-basic__title,
+.javascript__title p {
+  color: var(--dark-Gray-color);
+}
+
+.my-course {
+  display: grid;
+  grid-template-columns: 4fr repeat(3, 1fr);
+}
+.my-course__date,
+.my-course__rate,
+.my-course__level {
+  margin: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h5 {
+    color: var(--dark-Gray-color);
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+}
+
+.date,
+.rate,
+.level {
+  margin: 4.5rem 0;
+  display: flex;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+}
+.profile__avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+
+  img {
+    border-radius: 50%;
+    width: 50%;
+  }
+  h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  p {
+    color: var(--dark-Gray-color);
+  }
+}

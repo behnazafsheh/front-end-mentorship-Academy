@@ -393,5 +393,148 @@ main {
 .my-course__title h5 {
   color: var(--dark-Gray-color);
   font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.web-design__image,
+.html-basic__image {
+  background-color: var(--lightPurple-color);
+  padding: 2rem;
+  width: 7rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  margin: 2rem 2rem 2rem 0;
+}
+
+.web-design__image i,
+.html-basic__image i {
+  color: var(--darkPurple-color);
+  font-size: 2rem;
+}
+
+.Development__image {
+  background-color: var(--lightBlue-color);
+  padding: 2rem;
+  width: 7rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  margin: 2rem 2rem 2rem 0;
+}
+
+.Development__image i {
+  color: var(--darkBlue-color);
+  font-size: 2rem;
+}
+
+.python__image {
+  background-color: var(--lightPink-color);
+  padding: 2rem;
+  width: 7rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  margin: 2rem 2rem 2rem 0;
+}
+
+.python__image i {
+  color: var(--darkPink-color);
+  font-size: 2rem;
+}
+
+.javascript__image {
+  background-color: var(--lightOrange-color);
+  padding: 2rem;
+  width: 7rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  margin: 2rem 2rem 2rem 0;
+}
+
+.javascript__image i {
+  color: var(--darkOrange-color);
+  font-size: 2rem;
+}
+
+.web-design__title,
+.Development__title,
+.python__title,
+.html-basic__title,
+.javascript__title {
+  color: black;
+}
+
+.web-design__title h5,
+.Development__title h5,
+.python__title h5,
+.html-basic__title h5,
+.javascript__title h5 {
+  color: black;
+}
+
+.web-design__title,
+.Development__title,
+.python__title,
+.html-basic__title,
+.javascript__title p {
+  color: var(--dark-Gray-color);
+}
+
+.my-course {
+  display: grid;
+  grid-template-columns: 4fr repeat(3, 1fr);
+}
+
+.my-course__date,
+.my-course__rate,
+.my-course__level {
+  margin: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-course__date h5,
+.my-course__rate h5,
+.my-course__level h5 {
+  color: var(--dark-Gray-color);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.date,
+.rate,
+.level {
+  margin: 4.5rem 0;
+  display: flex;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.profile__avatar img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.profile__avatar h4 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.profile__avatar p {
+  color: var(--dark-Gray-color);
 }
 /*# sourceMappingURL=main.css.map */
