@@ -1,5 +1,5 @@
 "use strict";
-
+// calender
 const date = new Date();
 const renderCalender = ()=>{
     const months = [
@@ -64,3 +64,16 @@ renderCalender();
 
 
 // progress
+const progressBox = document.querySelectorAll(".progress-total");
+
+progressBox.forEach(elem => {
+    elem.addEventListener('click', () => {
+        for (let i = 0; i < progressBox.length; i++) {
+            progressBox[i].classList.remove("active");
+        }
+        elem.classList.add("active");
+    })
+    
+})
+
+

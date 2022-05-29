@@ -138,6 +138,10 @@ button {
   border-radius: 2rem;
 }
 
+.dashboard-list__items:first-child i {
+  color: var(--black-color);
+}
+
 .subscription__container {
   background-color: var(--lightPurple-color);
   display: flex;
@@ -688,8 +692,15 @@ aside {
   font-size: 1rem;
 }
 
-.progress-total:first-child {
-  background-color: var(--lightPurple-color) !important;
+.active {
+  background-color: var(--darkPurple-color);
+  color: var(--white-color);
+  transform: translate(20px);
+  transition: transform 1s ease-in-out;
+}
+
+.active span {
+  color: var(--white-color);
 }
 
 .circle-chart {

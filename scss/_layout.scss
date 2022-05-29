@@ -63,6 +63,11 @@
   padding: 2rem;
   width: 100%;
   border-radius: 2rem;
+
+  i{
+      color: var(--black-color);
+
+  }
 }
 
 .subscription__container {
@@ -596,8 +601,19 @@ aside {
     font-size: 1rem;
   }
 }
-.progress-total:first-child {
-  background-color: var(--lightPurple-color) !important;
+// .progress-total:first-child {
+//   background-color: var(--lightPurple-color);
+
+// }
+.active {
+    background-color: var(--darkPurple-color);
+    color: var(--white-color);
+    transform: translate(20px);
+    transition: transform 1s ease-in-out;
+
+    span{
+        color: var(--white-color);
+    }
 }
 
 .circle-chart {
