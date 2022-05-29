@@ -1,3 +1,5 @@
+"use strict";
+
 const date = new Date();
 const renderCalender = ()=>{
     const months = [
@@ -59,3 +61,6 @@ document.querySelector(".next").addEventListener('click', ()=>{
 });
 
 renderCalender();
+
+
+// progress

@@ -105,6 +105,7 @@
   p {
     font-size: 1.5rem;
     margin: 1rem 0;
+    padding: 0 2rem;
   }
 }
 main {
@@ -206,10 +207,10 @@ main {
   margin: 0 2rem;
   border-radius: 2rem;
 
-//   &:hover{
-//     transform: rotateY( 180deg ) ;
-//     transition: transform 0.5s;
-//   }
+  //   &:hover{
+  //     transform: rotateY( 180deg ) ;
+  //     transition: transform 0.5s;
+  //   }
 }
 .course__javascript-profile {
   justify-content: space-around;
@@ -398,6 +399,7 @@ main {
 .my-course {
   display: grid;
   grid-template-columns: 4fr repeat(3, 1fr);
+  margin-left: 2rem;
 }
 .my-course__date,
 .my-course__rate,
@@ -417,8 +419,12 @@ main {
 .date,
 .rate,
 .level {
-  margin: 4.5rem 0;
+  margin: 4.4rem 0;
   display: flex;
+
+  span{
+      font-size: 1.1rem;
+  }
 }
 aside {
   display: flex;
@@ -433,7 +439,7 @@ aside {
 
   img {
     border-radius: 50%;
-    width: 50%;
+    width: 30%;
   }
   h4 {
     font-size: 1.5rem;
@@ -446,95 +452,249 @@ aside {
 
 ///////// calender
 .calendar {
-    width: 30rem;
-    height: 32rem;
-    // background-color: #222227;
-    // box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
-    margin-top: 2rem;
-  }
-  
-  .month {
-    width: 100%;
-    height: 6rem;
-    // background-color: #167e56;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    text-align: center;
-    // text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-  }
-  
-  .month i {
-    font-size: 2.5rem;
+  width: 30rem;
+  height: 32rem;
+  // background-color: #222227;
+  // box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  margin-top: 2rem;
+}
+
+.month {
+  width: 100%;
+  height: 6rem;
+  // background-color: #167e56;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  // text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 1rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(29.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  // color: var(--white-color);
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.days div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(30.2rem / 7);
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+  // color: var(--white-color);
+}
+
+.days div:hover:not(.today) {
+  background-color: var(--lightPurple-color);
+  border: 0.2rem solid var(--darkPurple-color);
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: var(--darkPurple-color);
+  border-radius: 1rem;
+  // padding: 0.5rem;
+}
+
+////////// progress
+.progress__header h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 7rem;
+}
+
+.progress__css,
+.progress__programming,
+.progress__java{
+    background-color: var(--white-color);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+    width: 85%;
+    height: 8rem;
+    border-radius: 2rem;
+    justify-content: space-around;
+    margin: 2rem 0;
     cursor: pointer;
-  }
-  
-  .month h1 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .month p {
-    font-size: 1rem;
-  }
-  
-  .weekdays {
-    width: 100%;
-    height: 5rem;
-    padding: 0 0.4rem;
+
+}
+.progress__css__description{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    span{
+        color: var(--dark-Gray-color);
+        font-size: 1rem;
+    }
+}
+.progress-total:first-child{
+    background-color: var(--lightPurple-color)!important;
+}
+
+.circle-chart {
+    width: 150px;
+    height: 150px;
   }
   
-  .weekdays div {
-    font-size: 1.5rem;
-    font-weight: 400;
-    letter-spacing: 0.1rem;
-    width: calc(29.2rem / 7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-    // color: var(--white-color);
+  .circle-chart__circle {
+    stroke: #00acc1;
+    stroke-width: 2;
+    stroke-linecap: square;
+    fill: none;
+    animation: circle-chart-fill 2s reverse; /* 1 */ 
+    transform: rotate(-90deg); /* 2, 3 */
+    transform-origin: center; /* 4 */
   }
   
-  .days {
+  
+  
+  .circle-chart__circle--negative {
+    transform: rotate(-90deg) scale(1,-1); /* 1, 2, 3 */
+  }
+  
+  .circle-chart__background {
+    stroke: #efefef;
+    stroke-width: 2;
+    fill: none; 
+  }
+  
+  .circle-chart__info {
+    animation: circle-chart-appear 2s forwards;
+    opacity: 0;
+    transform: translateY(0.3em);
+  }
+  
+  .circle-chart__percent {
+    -o-table-baseline: center;
+    text-anchor: middle;
+    text-align: center;
+    font-size: 0.3rem;
+  }
+  
+  .circle-chart__subline {
+    //   alignment-baseline: central;
+      text-anchor: middle;
+      font-size: 3px;
+  }
+  
+  .success-stroke {
+    stroke: #00C851;
+  }
+  
+  .warning-stroke {
+    stroke: #ffbb33;
+  }
+  
+  .danger-stroke {
+    stroke: #ff4444;
+  }
+  
+  @keyframes circle-chart-fill {
+    to { stroke-dasharray: 0 100; }
+  }
+  
+  @keyframes circle-chart-appear {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  .skills{
+  color: black;
+  }
+  
+  .skills_section{
     width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  
+  .skill-head{
+    margin: 80px 0;
+  }
+  
+  .skill-head h1{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  
+  .skill-head p{
+    margin-bottom: 10px;
+  }
+  
+  .skills-area {
+    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
-    padding: 0.2rem;
   }
   
-  .days div {
-    font-size: 1.4rem;
-    margin: 0.3rem;
-    width: calc(30.2rem / 7);
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-    transition: background-color 0.2s;
-    // color: var(--white-color);
+  .single-skill {
+    width: 25%;
+    margin-bottom: 80px;
   }
   
-  .days div:hover:not(.today) {
-    background-color: var(--lightPurple-color);
-    border: 0.2rem solid var(--darkPurple-color);
-    cursor: pointer;
+  .success-stroke {
+    stroke: rgb(129, 86, 252);
+    stroke-width: 0.5;
   }
   
-  .prev-date,
-  .next-date {
-    opacity: 0.5;
+  .circle-chart__background {
+    stroke: #ede4e4;
+    stroke-width: 0.5;
   }
   
-  .today {
-    background-color: var(--darkPurple-color);
-    border-radius: 1rem;
-    // padding: 0.5rem;
-  }
