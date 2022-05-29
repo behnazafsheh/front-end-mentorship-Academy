@@ -249,7 +249,7 @@ main {
 
 .profile-images img {
   border-radius: 50%;
-  width: 3rem;
+  width: 2rem;
 }
 
 .course__map-detail {
@@ -267,7 +267,7 @@ main {
 
 .profile__arrow-map {
   background-color: var(--darkOrange-color);
-  padding: 1rem;
+  padding: 0.3rem;
   border-radius: 0.3rem;
 }
 
@@ -302,7 +302,7 @@ main {
 
 .profile-images img {
   border-radius: 50%;
-  width: 3rem;
+  width: 2rem;
 }
 
 .course__javascript-detail {
@@ -320,7 +320,7 @@ main {
 
 .profile__arrow-javascript {
   background-color: var(--darkPurple-color);
-  padding: 1rem;
+  padding: 0.3rem;
   border-radius: 0.3rem;
 }
 
@@ -355,7 +355,7 @@ main {
 
 .profile-images img {
   border-radius: 50%;
-  width: 3rem;
+  width: 2rem;
 }
 
 .course__photography-detail {
@@ -373,7 +373,7 @@ main {
 
 .profile__arrow-photography {
   background-color: var(--darkBlue-color);
-  padding: 1rem;
+  padding: 0.3rem;
   border-radius: 0.3rem;
 }
 
