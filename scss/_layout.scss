@@ -57,9 +57,20 @@
     margin: 0 1rem;
   }
 }
+.active-menu{
+    background-color: var(--lightPurple-color);
+    border-radius: 2rem;
+    cursor: pointer;
+
+    i {
+        font-size: 1.5rem;
+        color: var(--black-color);
+        margin: 0 1rem;
+      }
+}
 
 .dashboard-list__items:first-child {
-  background-color: var(--lightPurple-color);
+//   background-color: var(--lightPurple-color);
   padding: 2rem;
   width: 100%;
   border-radius: 2rem;
@@ -608,8 +619,8 @@ aside {
 .active {
     background-color: var(--darkPurple-color);
     color: var(--white-color);
-    transform: translate(20px);
-    transition: transform 1s ease-in-out;
+    // transform: translate(20px);
+    transition: 0.5s ease-in-out;
 
     span{
         color: var(--white-color);

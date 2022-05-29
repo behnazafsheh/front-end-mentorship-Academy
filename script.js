@@ -77,3 +77,13 @@ progressBox.forEach(elem => {
 })
 
 
+const menuBox = document.querySelectorAll(".dashboard-list__items");
+menuBox.forEach(elem => {
+    elem.addEventListener('click', () => {
+        for (let i = 0; i < menuBox.length; i++) {
+            menuBox[i].classList.remove("active-menu");
+        }
+        elem.classList.add("active-menu");
+    })
+    
+})
