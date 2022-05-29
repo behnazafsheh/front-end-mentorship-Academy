@@ -253,11 +253,16 @@ main {
 }
 
 .course__map-detail {
-  justify-content: space-around;
+  margin: 0 2rem;
 }
 
 .course__map-detail h4 {
   font-size: 1.2rem;
+}
+
+.course__map-detail p {
+  font-size: 1.1rem;
+  color: var(--dark-Gray-color);
 }
 
 .profile__arrow-map {
@@ -301,11 +306,16 @@ main {
 }
 
 .course__javascript-detail {
-  justify-content: space-around;
+  margin: 0 2rem;
 }
 
 .course__javascript-detail h4 {
   font-size: 1.2rem;
+}
+
+.course__javascript-detail p {
+  font-size: 1.1rem;
+  color: var(--dark-Gray-color);
 }
 
 .profile__arrow-javascript {
@@ -349,11 +359,16 @@ main {
 }
 
 .course__photography-detail {
-  justify-content: space-around;
+  margin: 0 2rem;
 }
 
 .course__photography-detail h4 {
   font-size: 1.2rem;
+}
+
+.course__photography-detail p {
+  font-size: 1.1rem;
+  color: var(--dark-Gray-color);
 }
 
 .profile__arrow-photography {
@@ -473,6 +488,14 @@ main {
 .html-basic__title h5,
 .javascript__title h5 {
   color: black;
+}
+
+.web-design__title p,
+.Development__title p,
+.python__title p,
+.html-basic__title p,
+.javascript__title p {
+  font-size: 1.2rem;
 }
 
 .web-design__title,
@@ -717,7 +740,7 @@ aside {
 }
 
 .success-stroke {
-  stroke: #00C851;
+  stroke: #00c851;
 }
 
 .warning-stroke {
