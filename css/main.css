@@ -79,6 +79,7 @@ button {
 }
 
 .container_total {
+  max-width: 1300px;
   width: 95%;
   background-color: var(--white-color);
   margin: 10rem auto;
@@ -160,7 +161,7 @@ button {
   align-items: center;
   justify-content: center;
   border-radius: 2rem;
-  margin: 5rem 0;
+  margin-top: 13rem;
   height: 30rem;
 }
 
@@ -398,6 +399,7 @@ main {
 
 .my-course__header {
   justify-content: space-between;
+  margin-top: 2rem;
 }
 
 .my-course__header h3 {
@@ -407,7 +409,7 @@ main {
 }
 
 .my-course__header a {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: var(--darkPink-color);
 }
 
@@ -587,7 +589,7 @@ aside {
 .calendar {
   width: 30rem;
   height: 32rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .month {
@@ -669,6 +671,10 @@ aside {
   border-radius: 1rem;
 }
 
+.progress {
+  margin-top: 3rem;
+}
+
 .progress__header h2 {
   font-size: 2rem;
   font-weight: 500;
@@ -680,11 +686,11 @@ aside {
 .progress__java {
   background-color: var(--white-color);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
-  width: 85%;
+  width: 30rem;
   height: 8rem;
   border-radius: 2rem;
   justify-content: space-around;
-  margin: 2rem 0;
+  margin: 2rem 0 2rem 6rem;
   cursor: pointer;
 }
 

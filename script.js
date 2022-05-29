@@ -76,7 +76,7 @@ progressBox.forEach(elem => {
     
 })
 
-
+// menu
 const menuBox = document.querySelectorAll(".dashboard-list__items");
 menuBox.forEach(elem => {
     elem.addEventListener('click', () => {
