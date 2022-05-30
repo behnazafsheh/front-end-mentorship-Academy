@@ -582,9 +582,9 @@ aside {
 }
 
 ////////// progress
-.progress{
-  margin-top: 3rem;
-}
+// .progress{
+//   margin-top: 3rem;
+// }
 .progress__header h2 {
   font-size: 2rem;
   font-weight: 500;
@@ -596,13 +596,17 @@ aside {
 .progress__java {
   background-color: var(--white-color);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
-  width: 30rem;
+  width: 28rem;
   height: 8rem;
   border-radius: 2rem;
   justify-content: space-around;
   margin: 2rem 0 2rem 6rem;
   // margin-left: 6rem;
   cursor: pointer;
+
+  i{
+    margin-right: 1rem;
+  }
 }
 .progress__css__description {
   display: flex;
